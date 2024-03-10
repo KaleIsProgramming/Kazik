@@ -8,13 +8,13 @@ export const NavBar = () => {
                 LOGO
             </LogoContainer>
             <AboutUs>
-                <p>O nas</p>
+                <a href="#aboutus">O nas</a>
             </AboutUs>
             <Products>
-                <p>Nasze produkty</p>
+                <a href="#products">Nasze produkty</a>
             </Products>
             <Contact>
-                <p>Kontakt</p>
+                <a href="#contact">Kontakt</a>
             </Contact>
             <Filler />
             <BlackBox />
@@ -48,13 +48,15 @@ const AboutUs = styled.div`
     align-items: center;
     justify-content: center;
     
-    p {
+    a {
         cursor: pointer;
         font-size: 150%;
         transition: 0.5s;
+        text-decoration: none;
+        color: white;
     }
 
-    p:hover {
+    a:hover {
         scale: 1.1;
     }
 `;
@@ -65,13 +67,15 @@ const Products = styled.div`
     align-items: center;
     justify-content: center;
     
-    p {
+    a {
         cursor: pointer;
         font-size: 150%;
         transition: 0.5s;
+        text-decoration: none;
+        color: white;
     }
 
-    p:hover {
+    a:hover {
         scale: 1.1;
     }
 `;
@@ -83,13 +87,15 @@ const Contact = styled.div`
     justify-content: center;
 
     
-    p {
+    a {
         cursor: pointer;
         font-size: 150%;
         transition: 0.5s;
+        text-decoration: none;
+        color: white;
     }
 
-    p:hover {
+    a:hover {
         scale: 1.1;
     }
 `;

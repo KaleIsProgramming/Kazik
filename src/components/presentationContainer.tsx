@@ -18,7 +18,7 @@ export const PresentationContainer = () => {
                                 Jonnesway to narzędzia najwyższej jakości, zaprojektowane i wyprodukowane dla profesjonalistów, którzy w swojej pracy wymagają niezawodności. Dzięki najlepszym materiałom, ergonomii i nowoczesnemu wzornictwu Jonnesway jest doceniany przez specjalistów na całym świecie.
                             </TextContainer>
 
-                            <ButtonContainer>
+                            <ButtonContainer id="aboutus">
                                 <a href="#products">zobacz wszystkie produkty</a>
                             </ButtonContainer>
 
@@ -98,7 +98,7 @@ const ButtonContainer = styled.div`
     align-items: center;
     
     a {
-        background: #f86402;
+        background: #C40A34;
         padding: 1% 6%;
         border: none;
         border-radius: 5px;

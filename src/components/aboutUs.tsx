@@ -7,7 +7,7 @@ export const AboutUsSection = () => {
             <Header>
                 KIM JESTEŚMY?
             </Header>
-            <ContentContainer>
+            <ContentContainer  id="products">
                 <p>
                     Od ponad 20 lat projektujemy i produkujemy  nowe rozwiązania dla budownictwa, przemysłu i domu.
                     Upraszczamy i optymalizujemy Twoją pracę dzięki opatentowanym rozwiązaniom, które docenili użytkownicy na całym świecie. 

@@ -4,7 +4,7 @@ export const Contact = () => {
 
     return(
         <ContactUs>
-            <AdresContainer>
+            <AdresContainer id="contact">
                 <h3>Aretus</h3>
                 <p>ul. Iskierki 40/1</p>
                 <p>62-080 Lusówko</p>
