@@ -1,7 +1,9 @@
+import { FC } from "react";
+import { WidthInterface } from "./helper";
 import styled from "@emotion/styled";
 const tools = require('../images/presentationContainer/narzedzia.jpg');
 
-export const PresentationContainer = () => {
+export const PresentationContainer:FC<WidthInterface> = ({data}) => {
 
     return(
         <StyledPresentationContainer>

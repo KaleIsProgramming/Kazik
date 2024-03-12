@@ -1,7 +1,10 @@
+import { FC } from "react";
+import { WidthInterface } from "./helper";
 import styled from "@emotion/styled";
 
-export const AboutUsSection = () => {
+export const AboutUsSection:FC<WidthInterface> = ({data}) => {
 
+    
     return(
         <AboutUs>
             <Header>
@@ -20,7 +23,7 @@ export const AboutUsSection = () => {
 
 const AboutUs = styled.div`
     margin-top: 5vh;
-    height: 30vh;
+    min-height: 30vh;
     width: 100%;
 `;
 

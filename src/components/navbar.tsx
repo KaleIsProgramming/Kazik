@@ -1,23 +1,64 @@
+import { FC, useState } from "react";
+import { WidthInterface } from "./helper";
 import styled from "@emotion/styled";
 
-export const NavBar = () => {
+export const NavBar:FC<WidthInterface> = ({data}) => {
+
+    const [isBurgerOpened, setIsBurgerOpened] = useState(false);
 
     return(
         <NavBarContainer>
-            <LogoContainer>
-                LOGO
-            </LogoContainer>
-            <AboutUs>
-                <a href="#aboutus">O nas</a>
-            </AboutUs>
-            <Products>
-                <a href="#products">Nasze produkty</a>
-            </Products>
-            <Contact>
-                <a href="#contact">Kontakt</a>
-            </Contact>
-            <Filler />
-            <BlackBox />
+            {data >= 1390 ? 
+            <>
+                <LogoContainer>
+                    LOGO
+                </LogoContainer>
+                <AboutUs>
+                    <a href="#aboutus">O nas</a>
+                </AboutUs>
+                <Products>
+                    <a href="#products">Nasze produkty</a>
+                </Products>
+                <Contact>
+                    <a href="#contact">Kontakt</a>
+                </Contact>
+                <Filler />
+                <BlackBox />
+            </> 
+            : 
+            <>
+                {
+                isBurgerOpened ? 
+                <>
+                    <AboutUs>
+                        <a href="#aboutus">O nas</a>
+                    </AboutUs>
+                    <Products>
+                        <a href="#products">Nasze produkty</a>
+                    </Products>
+                    <Contact>
+                        <a href="#contact">Kontakt</a>
+                    </Contact>
+                </> : 
+                
+                <>
+                    <LogoContainer>
+                        LOGO
+                    </LogoContainer>
+                    <AboutUs>
+                    </AboutUs>
+                    <Products>
+                    </Products>
+                    <Contact>
+                        <i className="fa-solid fa-bars"></i>
+                    </Contact>
+                    <Filler />
+                    <BlackBox />
+                </>
+                }
+            </>
+            }
+
         </NavBarContainer>
     )
 }
