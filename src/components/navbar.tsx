@@ -29,17 +29,23 @@ export const NavBar:FC<WidthInterface> = ({data}) => {
             <>
                 {
                 isBurgerOpened ? 
-                <>
-                    <AboutUs>
-                        <a href="#aboutus">O nas</a>
-                    </AboutUs>
-                    <Products>
-                        <a href="#products">Nasze produkty</a>
-                    </Products>
-                    <Contact>
-                        <a href="#contact">Kontakt</a>
-                    </Contact>
-                </> : 
+                <OpenBurgerContainer>
+
+                    <CloseIconContainer>
+                        <i onClick={() => setIsBurgerOpened(!isBurgerOpened)} className="fa-solid fa-xmark"></i>
+                    </CloseIconContainer>
+                    <div>
+                        <a onClick={() => setIsBurgerOpened(!isBurgerOpened)} href="#aboutus">O nas</a>
+                    </div>
+                    <div>
+                        <a onClick={() => setIsBurgerOpened(!isBurgerOpened)} href="#products">Nasze produkty</a>
+                    </div>
+                    <div>
+                        <a onClick={() => setIsBurgerOpened(!isBurgerOpened)} href="#contact">Kontakt</a>
+                    </div>
+                    
+
+                </OpenBurgerContainer> : 
                 
                 <>
                     <LogoContainer>
@@ -50,10 +56,12 @@ export const NavBar:FC<WidthInterface> = ({data}) => {
                     <Products>
                     </Products>
                     <Contact>
-                        <i className="fa-solid fa-bars"></i>
+                        
                     </Contact>
                     <Filler />
-                    <BlackBox />
+                    <BlackBox>
+                        <i onClick={() => setIsBurgerOpened(!isBurgerOpened)} className="fa-solid fa-bars"></i>
+                    </BlackBox >
                 </>
                 }
             </>
@@ -150,4 +158,49 @@ const BlackBox = styled.div`
     height: 100%;
     width: 24%;
     background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+        font-size: 150%;
+    }
+`;
+
+const OpenBurgerContainer = styled.div`
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: black;
+
+    div {
+        margin: 40px;
+        
+        
+
+        a{ 
+            color: white;
+            font-size: 150%;
+            font-weight: 500;
+
+            &:hover {
+                transition: 0.5s;
+                scale: 1.05;
+            }
+        }
+    }
+`;
+
+const CloseIconContainer = styled.div`
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    i {
+        font-size: 200%;
+    }
 `;
