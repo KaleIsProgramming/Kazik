@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { WidthInterface } from "./helper";
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 const m1 = require('../images/products/m1.jpg')
 const m2 = require('../images/products/m2.png')
 const m3 = require('../images/products/m3.jpg')
@@ -16,7 +17,11 @@ export const Products:FC<WidthInterface> = ({data}) => {
             {
             data >= 1390 ? 
             <>
-                <Product>
+                <Product
+                    initial={{opacity: 0, x:1000}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration: 1}}
+                >
 
                     <TextContainer>
                         <TextHeader>
@@ -39,7 +44,11 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     </ImageContainer>
 
                 </Product>
-                <Product>
+                <Product 
+                    initial={{opacity: 0, x:-1000}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration: 1}}
+                >
 
                     <ImageContainer>
                         <img src={m2} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW" />
@@ -62,7 +71,11 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     </TextContainer>
 
                 </Product>
-                <Product>
+                <Product
+                    initial={{opacity: 0, x:1000}}
+                    whileInView={{opacity: 1, x:0}}
+                    transition={{duration: 1}}
+                >
 
                     <TextContainer>
                         <TextHeader>
@@ -88,7 +101,11 @@ export const Products:FC<WidthInterface> = ({data}) => {
             </>
             : 
             <>
-                <Product>
+                <Product
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 2}}
+                >
                     <TextHeader>
                         NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW Z GWINTEM<br/>
                         <span>Nr ref. 8001</span>
@@ -111,7 +128,11 @@ export const Products:FC<WidthInterface> = ({data}) => {
 
 
                     </Product>
-                    <Product>
+                    <Product
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 2}}
+                    >
                     <TextHeader>
                         NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW <br/>
                         <span>Nr ref. 8002</span>
@@ -133,7 +154,11 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     </TextContainer>
 
                     </Product>
-                    <Product>
+                    <Product
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 2}}
+                    >
 
                     <TextHeader>
                         NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW - MINI <br/>
@@ -170,6 +195,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
 const ProductsContainer = styled.div`
     min-height: 230vh;
     width: 100%;
+    overflow-x: hidden
 `;
 
 const Header = styled.h1`
@@ -182,7 +208,7 @@ const Header = styled.h1`
     color: #C40A34;
 `;
 
-const Product = styled.div`
+const Product = styled(motion.div)`
     min-height: 70vh;
     width: 90%;
     margin-left: 10%;

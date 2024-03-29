@@ -1,6 +1,7 @@
 import { FC, useState } from "react";
 import { WidthInterface } from "./helper";
 import styled from "@emotion/styled";
+const logo = require('../images/logo.png');
 
 export const NavBar:FC<WidthInterface> = ({data}) => {
 
@@ -11,7 +12,7 @@ export const NavBar:FC<WidthInterface> = ({data}) => {
             {data >= 1390 ? 
             <>
                 <LogoContainer>
-                    LOGO
+                    <img src={logo} alt="logo" />
                 </LogoContainer>
                 <AboutUs>
                     <a href="#aboutus">O nas</a>
@@ -23,7 +24,9 @@ export const NavBar:FC<WidthInterface> = ({data}) => {
                     <a href="#contact">Kontakt</a>
                 </Contact>
                 <Filler />
-                <BlackBox />
+                <BlackBox>
+                    <a href="#">PL</a><span>|</span><a href="#">EN</a>
+                </BlackBox>
             </> 
             : 
             <>
@@ -43,13 +46,15 @@ export const NavBar:FC<WidthInterface> = ({data}) => {
                     <div>
                         <a onClick={() => setIsBurgerOpened(!isBurgerOpened)} href="#contact">Kontakt</a>
                     </div>
-                    
+                    <div>
+                        <a href="#">PL</a><span>|</span><a href="#">EN</a>
+                    </div>
 
                 </OpenBurgerContainer> : 
                 
                 <>
                     <LogoContainer>
-                        LOGO
+                        <img src={logo} alt="logo" />
                     </LogoContainer>
                     <AboutUs>
                     </AboutUs>
@@ -89,6 +94,10 @@ const LogoContainer = styled.div`
     align-items: center;
     justify-content: center;
     margin-right: 3%;
+
+    img {
+        max-height: 100%;
+    }
 `;
 const AboutUs = styled.div`
     height: 100%;
@@ -165,6 +174,19 @@ const BlackBox = styled.div`
     i {
         font-size: 150%;
     }
+
+    a {
+        margin: 10px;
+        cursor: pointer;
+        font-size: 130%;
+        transition: 0.5s;
+        text-decoration: none;
+        color: white;
+    }
+
+    span {
+        font-size: 140%;
+    }
 `;
 
 const OpenBurgerContainer = styled.div`
@@ -186,11 +208,16 @@ const OpenBurgerContainer = styled.div`
             color: white;
             font-size: 150%;
             font-weight: 500;
+            margin: 20px;
 
             &:hover {
                 transition: 0.5s;
                 scale: 1.05;
             }
+        }
+
+        span {
+            font-size: 160%;
         }
     }
 `;
