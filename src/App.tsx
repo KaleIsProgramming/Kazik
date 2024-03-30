@@ -1,9 +1,13 @@
-import { MainPage } from "./pages";
+import { Route, Routes } from "react-router-dom";
+import { MainPage, PrivacyPolicyPage } from "./pages";
 
 function App() {
   return (
     <div className="App">
-      <MainPage />
+      <Routes>
+        <Route path="/" element={<MainPage />}/>
+        <Route path="privacy_policy" element={<PrivacyPolicyPage />}/>
+      </Routes>
     </div>
   );
 }
