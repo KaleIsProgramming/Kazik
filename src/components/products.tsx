@@ -1,10 +1,11 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 import { WidthInterface } from "./helper";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 const m1 = require('../images/products/m1.jpg')
-const m2 = require('../images/products/m2.png')
-const m3 = require('../images/products/m3.jpg')
+const m2 = require('../images/products/m2.jpg')
+//const m3 = require('../images/products/m3.jpg')
 
 
 export const Products:FC<WidthInterface> = ({data}) => {
@@ -40,7 +41,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
                         </Text>
                     </TextContainer>
                     <ImageContainer>
-                        <img src={m3} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW Z GWINTEM" />
+                        <img src={m1} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW Z GWINTEM" />
                     </ImageContainer>
 
                 </Product>
@@ -111,7 +112,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
                         <span>Nr ref. 8001</span>
                     </TextHeader>
                     <ImageContainer>
-                        <img src={m3} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW Z GWINTEM" />
+                        <img src={m1} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW Z GWINTEM" />
                     </ImageContainer>
                     <TextContainer>
                         <Text>
@@ -185,7 +186,9 @@ export const Products:FC<WidthInterface> = ({data}) => {
             </>
             
             }
-
+            <PravicyPolicyContainer>
+                <Link to="/privacy_policy">Polityka Prywatności</Link>
+            </PravicyPolicyContainer>
         </ProductsContainer>
     )
 }
@@ -270,5 +273,17 @@ const Text = styled.p`
     span {
         font-weight: 600;
         font-style: italic;
+    }
+`;
+
+const PravicyPolicyContainer = styled.div`
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+
     }
 `;

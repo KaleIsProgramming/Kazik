@@ -12,7 +12,7 @@ export const NavBar:FC<WidthInterface> = ({data}) => {
             {data >= 1390 ? 
             <>
                 <LogoContainer>
-                    <img src={logo} alt="logo" />
+                    <a href="/"><img src={logo} alt="logo" /></a>
                 </LogoContainer>
                 <AboutUs>
                     <a href="#aboutus">O nas</a>
@@ -95,9 +95,13 @@ const LogoContainer = styled.div`
     justify-content: center;
     margin-right: 3%;
 
-    img {
-        max-height: 100%;
+    a {
+        height: 10vh;
+        img {
+            max-height: 100%;
+        }
     }
+
 `;
 const AboutUs = styled.div`
     height: 100%;
