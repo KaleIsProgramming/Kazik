@@ -25,7 +25,7 @@ export const NavBar:FC<WidthInterface> = ({data}) => {
                 </Contact>
                 <Filler />
                 <BlackBox>
-                    <a href="#">PL</a><span>|</span><a href="#">EN</a>
+                    <a href="#"></a><span></span><a href="#"></a>
                 </BlackBox>
             </> 
             : 
@@ -47,14 +47,14 @@ export const NavBar:FC<WidthInterface> = ({data}) => {
                         <a onClick={() => setIsBurgerOpened(!isBurgerOpened)} href="#contact">Kontakt</a>
                     </div>
                     <div>
-                        <a href="#">PL</a><span>|</span><a href="#">EN</a>
+                        <a href="#"></a><span></span><a href="#"></a>
                     </div>
 
                 </OpenBurgerContainer> : 
                 
                 <>
                     <LogoContainer>
-                        <img src={logo} alt="logo" />
+                        <a href="/"><img src={logo} alt="logo" /></a>
                     </LogoContainer>
                     <AboutUs>
                     </AboutUs>
@@ -83,25 +83,36 @@ const NavBarContainer = styled.div`
     background: rgb(0, 111, 61);
     color: white;
     display: flex;
-    justify-content: flex-end;
+
     z-index: 9999;
 `;
 
 const LogoContainer = styled.div`
     height: 100%;
-    width: 10%;
+    width: 11%;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-right: 3%;
+    margin-left: 10%;
 
     a {
-        height: 10vh;
+        height: 11.6vh;
+        background: white;
         img {
             max-height: 100%;
         }
     }
 
+    @media screen and (max-width: 1390px) {
+
+
+        a {
+
+            img {
+                max-height: 100%;
+            }
+        }
+    }
 `;
 const AboutUs = styled.div`
     height: 100%;

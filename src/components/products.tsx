@@ -19,7 +19,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
             data >= 1390 ? 
             <>
                 <Product
-                    initial={{opacity: 0, x:1000}}
+                    initial={{opacity: 0, x:300}}
                     whileInView={{opacity: 1, x:0}}
                     transition={{duration: 1}}
                 >
@@ -46,7 +46,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
 
                 </Product>
                 <Product 
-                    initial={{opacity: 0, x:-1000}}
+                    initial={{opacity: 0, x:-300}}
                     whileInView={{opacity: 1, x:0}}
                     transition={{duration: 1}}
                 >
@@ -73,7 +73,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
 
                 </Product>
                 <Product
-                    initial={{opacity: 0, x:1000}}
+                    initial={{opacity: 0, x:300}}
                     whileInView={{opacity: 1, x:0}}
                     transition={{duration: 1}}
                 >
@@ -104,7 +104,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
             <>
                 <Product
                     initial={{opacity: 0}}
-                    whileInView={{opacity: 1}}
+                    whileInView={{opacity: 1, x: 0}}
                     transition={{duration: 2}}
                 >
                     <TextHeader>
@@ -131,7 +131,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     </Product>
                     <Product
                         initial={{opacity: 0}}
-                        whileInView={{opacity: 1}}
+                        whileInView={{opacity: 1, x: 0}}
                         transition={{duration: 2}}
                     >
                     <TextHeader>
@@ -157,7 +157,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     </Product>
                     <Product
                         initial={{opacity: 0}}
-                        whileInView={{opacity: 1}}
+                        whileInView={{opacity: 1, x: 0}}
                         transition={{duration: 2}}
                     >
 
@@ -250,6 +250,7 @@ const ImageContainer = styled.div`
     @media screen and (max-width:1390px) {
         height: 50%;
         width: 100%;
+        margin: 10% 0;
     }
 `;
 
