@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC, useState, useEffect } from "react";
 import { WidthInterface } from "./helper";
 import styled from "@emotion/styled";
 const logo = require('../images/logo.png');
@@ -6,6 +6,15 @@ const logo = require('../images/logo.png');
 export const NavBar:FC<WidthInterface> = ({data}) => {
 
     const [isBurgerOpened, setIsBurgerOpened] = useState(false);
+
+    useEffect(() => {
+        if(isBurgerOpened) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+    },[isBurgerOpened]);
 
     return(
         <NavBarContainer>
