@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { WidthInterface } from "./helper";
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
-const m1 = require('../images/products/m1.jpg')
-const m2 = require('../images/products/m2.jpg')
-//const m3 = require('../images/products/m3.jpg')
+const m1 = require('../images/products/PRO.JPG')
+const m2 = require('../images/products/AM.JPG')
+const m3 = require('../images/products/MINI.JPG')
 
 
 export const Products:FC<WidthInterface> = ({data}) => {
@@ -26,8 +26,8 @@ export const Products:FC<WidthInterface> = ({data}) => {
 
                     <TextContainer>
                         <TextHeader>
-                        NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW Z GWINTEM<br/>
-                        <span>Nr ref. 8001</span>
+                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO PRO</TitleSpan> DO ZAPRAW Z GWINTEM<br/>
+                        <RefNum>Nr ref. 8001</RefNum>
                         </TextHeader>
                         <Text>
                         Jedyne na rynku profesjonalne narzędzie do mieszania wszelkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych i klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę</span> również doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
@@ -56,8 +56,8 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     </ImageContainer>
                     <TextContainer>
                         <TextHeader>
-                            NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW <br/>
-                            <span>Nr ref. 8002</span>
+                            NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO AM</TitleSpan> DO ZAPRAW <br/>
+                            <RefNum>Nr ref. 8002</RefNum>
                         </TextHeader>
                         <Text>
                             Narzędzie do mieszania wszelkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych i klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę</span> również doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
@@ -80,8 +80,8 @@ export const Products:FC<WidthInterface> = ({data}) => {
 
                     <TextContainer>
                         <TextHeader>
-                            NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW - MINI <br/>
-                            <span>Nr ref. 8003</span>
+                            NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO MINI</TitleSpan> DO ZAPRAW <br/>
+                            <RefNum>Nr ref. 8003</RefNum>
                         </TextHeader>
                         <Text>
                             Mieszadło doskonałe do mieszania w pojemnikach o małej średnicy, takich jak np. puszki od 0,7 l. do 3 l. <span>Miesza bez pryskania szybko i dokładnie na jednolitą gładką masę.</span>  Doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
@@ -95,7 +95,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
                         </Text>
                     </TextContainer>
                     <ImageContainer>
-                        <img src={m1} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW - MINI " />
+                        <img src={m3} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW - MINI " />
                     </ImageContainer>
 
                 </Product>
@@ -108,8 +108,8 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     transition={{duration: 2}}
                 >
                     <TextHeader>
-                        NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW Z GWINTEM<br/>
-                        <span>Nr ref. 8001</span>
+                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO PRO</TitleSpan> DO ZAPRAW Z GWINTEM<br/>
+                        <RefNum>Nr ref. 8001</RefNum>
                     </TextHeader>
                     <ImageContainer>
                         <img src={m1} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW Z GWINTEM" />
@@ -135,8 +135,8 @@ export const Products:FC<WidthInterface> = ({data}) => {
                         transition={{duration: 2}}
                     >
                     <TextHeader>
-                        NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW <br/>
-                        <span>Nr ref. 8002</span>
+                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO AM</TitleSpan> DO ZAPRAW <br/>
+                        <RefNum>Nr ref. 8002</RefNum>
                     </TextHeader>
                     <ImageContainer>
                         <img src={m2} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW" />
@@ -162,11 +162,11 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     >
 
                     <TextHeader>
-                        NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW - MINI <br/>
-                        <span>Nr ref. 8003</span>
+                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO MINI</TitleSpan> DO ZAPRAW <br/>
+                        <RefNum>Nr ref. 8003</RefNum>
                     </TextHeader>
                     <ImageContainer>
-                        <img src={m1} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW - MINI " />
+                        <img src={m3} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW - MINI " />
                     </ImageContainer>
                     <TextContainer>
                         <Text>
@@ -242,9 +242,10 @@ const ImageContainer = styled.div`
     justify-content: center;
 
     img {
-        height: 70%;
+        height: 90%;
         width: 80%;
         margin-right: 10%;
+        margin-top: 5%;
     }
 
     @media screen and (max-width:1390px) {
@@ -258,11 +259,17 @@ const TextHeader = styled.h1`
     height: 20%;
     width: 80%;
     font-size: 180%;
+`;
 
-    span {
-        font-weight: 500;
-        font-size: 60%;
-    }
+const RefNum = styled.span`
+    font-weight: 500;
+    font-size: 60%;
+`;
+
+const TitleSpan = styled.span`
+    font-style: italic; 
+    font-weight: 400;
+    color: #d04444; 
 `;
 
 const Text = styled.p`

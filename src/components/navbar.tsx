@@ -148,6 +148,7 @@ const Products = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 2%;
     
     a {
         cursor: pointer;
@@ -184,7 +185,7 @@ const Contact = styled.div`
 
 const Filler = styled.div`
     height: 100%;
-    width: 27%;
+    width: 25%;
 `;
 
 const BlackBox = styled.div`    

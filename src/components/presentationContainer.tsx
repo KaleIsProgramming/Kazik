@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { WidthInterface } from "./helper";
 import styled from "@emotion/styled";
-const tools = require('../images/presentationContainer/narzedzia.jpg');
+const main = require('../images/presentationContainer/main.jpg');
 
 export const PresentationContainer:FC<WidthInterface> = ({data}) => {
 
@@ -9,16 +9,16 @@ export const PresentationContainer:FC<WidthInterface> = ({data}) => {
         <StyledPresentationContainer>
             <GreenBackground>
                 <FloatingPhotoContainer>
-                    <Photo src={tools} alt="narzedzia" />
+                    <Photo src={main} alt="main photo" />
                         <PhotoContent>
 
                             <HeaderContainer>
-                                Narzędzia <br/>do zadań specjalnych
-                            </HeaderContainer>
+                                Mieszadła <br/>do zadań specjalnych
+                            </HeaderContainer> 
 
-                            <TextContainer>
+                            {/* <TextContainer>
                                 Jonnesway to narzędzia najwyższej jakości, zaprojektowane i wyprodukowane dla profesjonalistów, którzy w swojej pracy wymagają niezawodności. Dzięki najlepszym materiałom, ergonomii i nowoczesnemu wzornictwu Jonnesway jest doceniany przez specjalistów na całym świecie.
-                            </TextContainer>
+                            </TextContainer> */}
 
                             <ButtonContainer id="aboutus">
                                 <a href="#products">zobacz wszystkie produkty</a>
@@ -59,9 +59,9 @@ const PhotoContent = styled.div`
     width: 90%;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    color: white;
+    color: black;
 `;
 
 const Photo = styled.img`
@@ -80,7 +80,8 @@ const HeaderContainer = styled.h1`
     display: flex;
     align-items: center;
     font-size: 350%;
-    margin-left: 12%;
+    margin-left: 3%;
+    margin-bottom: 20%;
 `;
 
 const TextContainer = styled.p`
@@ -94,8 +95,9 @@ const TextContainer = styled.p`
 `;
 
 const ButtonContainer = styled.div`
-    height: 20%;    
-    margin-left: 12%;
+    height: 10%;    
+    margin-left: 3%;
+    margin-bottom: 7%;
     display: flex;
     align-items: center;
     
