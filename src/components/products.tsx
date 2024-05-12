@@ -31,9 +31,9 @@ export const Products:FC<WidthInterface> = ({data}) => {
                         </TextHeader>
                         <Text>
                         Jedyne na rynku profesjonalne narzędzie do mieszania wszelkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych i klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę</span> również doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
-                                Wymiary:<br/>
+                                Parametry:<br/>
                                 -  Średnica mieszadła:120 mm<br/>
-                                -  Długość całkowita  mieszadła:   600 mm<br/>
+                                -  Długość całkowita  mieszadła:   500 mm<br/>
                                 -  Średnica pręta: 10 mm<br/>
                                 -  Wykonane jest ze stali pokrytej powłoką cynku<br/>
                                 -  Pręt o średnicy 10 mm zakończony gwintem 14 mm do mieszadeł profesjonalnych <br/>
@@ -61,9 +61,9 @@ export const Products:FC<WidthInterface> = ({data}) => {
                         </TextHeader>
                         <Text>
                             Narzędzie do mieszania wszelkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych i klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę</span> również doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
-                            Wymiary:<br/>
+                            Parametry:<br/>
                             -  Średnica mieszadła: 120 mm<br/>
-                            -  Długość mieszadła:   600 mm<br/>
+                            -  Długość mieszadła:   500 mm<br/>
                             -  Średnica pręta: 10 mm<br/>
                             -  Wykonane jest ze stali pokrytej powłoką cynku<br/>
                             -  Pręt  sześciokątny do wiertarek<br/>
@@ -85,7 +85,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
                         </TextHeader>
                         <Text>
                             Mieszadło doskonałe do mieszania w pojemnikach o małej średnicy, takich jak np. puszki od 0,7 l. do 3 l. <span>Miesza bez pryskania szybko i dokładnie na jednolitą gładką masę.</span>  Doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
-                            Wymiary:<br/>
+                            Parametry:<br/>
                             -  Średnica mieszadła: 60 mm<br/>
                             -  Długość mieszadła:   23  mm<br/>
                             -  Średnica pręta: 4 mm<br/>
@@ -117,9 +117,9 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     <TextContainer>
                         <Text>
                         Jedyne na rynku profesjonalne narzędzie do mieszania wszelkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych i klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę</span> również doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
-                                Wymiary:<br/>
+                                Parametry:<br/>
                                 -  Średnica mieszadła:120 mm<br/>
-                                -  Długość całkowita  mieszadła:   600 mm<br/>
+                                -  Długość całkowita  mieszadła:   500 mm<br/>
                                 -  Średnica pręta: 10 mm<br/>
                                 -  Wykonane jest ze stali pokrytej powłoką cynku<br/>
                                 -  Pręt o średnicy 10 mm zakończony gwintem 14 mm do mieszadeł profesjonalnych <br/>
@@ -144,9 +144,9 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     <TextContainer>
                         <Text>
                             Narzędzie do mieszania wszelkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych i klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę</span> również doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
-                            Wymiary:<br/>
+                            Parametry:<br/>
                             -  Średnica mieszadła: 120 mm<br/>
-                            -  Długość mieszadła:   600 mm<br/>
+                            -  Długość mieszadła:   500 mm<br/>
                             -  Średnica pręta: 10 mm<br/>
                             -  Wykonane jest ze stali pokrytej powłoką cynku<br/>
                             -  Pręt  sześciokątny do wiertarek<br/>
@@ -171,7 +171,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     <TextContainer>
                         <Text>
                             Mieszadło doskonałe do mieszania w pojemnikach o małej średnicy, takich jak np. puszki od 0,7 l. do 3 l. <span>Miesza bez pryskania szybko i dokładnie na jednolitą gładką masę.</span>  Doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
-                            Wymiary:<br/>
+                            Parametry:<br/>
                             -  Średnica mieszadła: 60 mm<br/>
                             -  Długość mieszadła:   23  mm<br/>
                             -  Średnica pręta: 4 mm<br/>

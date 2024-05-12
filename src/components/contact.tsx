@@ -19,7 +19,7 @@ export const Contact:FC<WidthInterface> = ({data}) => {
             </NumbersContainer>
 
             <SocialMediaContainer>
-                <Mail href="mailto:aretus8@gmail.com">aretus8@gmail.com</Mail>
+                <Mail href="mailto:aretus8@gmail.com">aretus@aretus8.com</Mail>
                 {data >= 1390 ?
                  <>
                     <div>

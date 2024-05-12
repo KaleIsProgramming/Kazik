@@ -13,7 +13,8 @@ export const PresentationContainer:FC<WidthInterface> = ({data}) => {
                         <PhotoContent>
 
                             <HeaderContainer>
-                                Mieszadła <br/>do zadań specjalnych
+                                <div>Mieszadło <span>Maksa</span></div>
+                                <div>do zadań specjalnych</div>
                             </HeaderContainer> 
 
                             {/* <TextContainer>
@@ -78,10 +79,15 @@ const BlackRectangle = styled.div`
 const HeaderContainer = styled.h1`
     height: 30%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     font-size: 350%;
     margin-left: 3%;
+    margin-top: 2.5%;
     margin-bottom: 20%;
+
+    span {
+        font-family: Arial;
+    }
 `;
 
 const TextContainer = styled.p`
