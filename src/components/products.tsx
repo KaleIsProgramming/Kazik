@@ -26,11 +26,11 @@ export const Products:FC<WidthInterface> = ({data}) => {
 
                     <TextContainer>
                         <TextHeader>
-                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO PRO</TitleSpan> DO ZAPRAW Z GWINTEM<br/>
+                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO PRO</TitleSpan> Z GWINTEM<br/>
                         <RefNum>Nr ref. 8001</RefNum>
                         </TextHeader>
                         <Text>
-                        Jedyne na rynku profesjonalne narzędzie do mieszania wszelkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych i klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę</span> również doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
+                        Jedyne na rynku profesjonalne narzędzie do mieszania wszystkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych, klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę.</span>  Doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
                                 Parametry:<br/>
                                 -  Średnica mieszadła:120 mm<br/>
                                 -  Długość całkowita  mieszadła:   500 mm<br/>
@@ -41,7 +41,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
                         </Text>
                     </TextContainer>
                     <ImageContainer>
-                        <img src={m1} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW Z GWINTEM" />
+                        <img src={m1} alt="NIE PRYSKAJĄCE MIESZADŁO Z GWINTEM" />
                     </ImageContainer>
 
                 </Product>
@@ -52,15 +52,15 @@ export const Products:FC<WidthInterface> = ({data}) => {
                 >
 
                     <ImageContainer>
-                        <img src={m2} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW" />
+                        <img src={m2} alt="NIE PRYSKAJĄCE MIESZADŁO" />
                     </ImageContainer>
                     <TextContainer>
                         <TextHeader>
-                            NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO AM</TitleSpan> DO ZAPRAW <br/>
+                            NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO AM</TitleSpan><br/>
                             <RefNum>Nr ref. 8002</RefNum>
                         </TextHeader>
                         <Text>
-                            Narzędzie do mieszania wszelkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych i klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę</span> również doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
+                        Narzędzie do mieszania wszystkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych, klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę.</span> Doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
                             Parametry:<br/>
                             -  Średnica mieszadła: 120 mm<br/>
                             -  Długość mieszadła:   500 mm<br/>
@@ -80,7 +80,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
 
                     <TextContainer>
                         <TextHeader>
-                            NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO MINI</TitleSpan> DO ZAPRAW <br/>
+                            NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO MINI</TitleSpan><br/>
                             <RefNum>Nr ref. 8003</RefNum>
                         </TextHeader>
                         <Text>
@@ -95,7 +95,7 @@ export const Products:FC<WidthInterface> = ({data}) => {
                         </Text>
                     </TextContainer>
                     <ImageContainer>
-                        <img src={m3} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW - MINI " />
+                        <img src={m3} alt="NIE PRYSKAJĄCE MIESZADŁO - MINI" />
                     </ImageContainer>
 
                 </Product>
@@ -108,15 +108,15 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     transition={{duration: 2}}
                 >
                     <TextHeader>
-                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO PRO</TitleSpan> DO ZAPRAW Z GWINTEM<br/>
+                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO PRO</TitleSpan>Z GWINTEM<br/>
                         <RefNum>Nr ref. 8001</RefNum>
                     </TextHeader>
                     <ImageContainer>
-                        <img src={m1} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW Z GWINTEM" />
+                        <img src={m1} alt="NIE PRYSKAJĄCE MIESZADŁO Z GWINTEM" />
                     </ImageContainer>
                     <TextContainer>
                         <Text>
-                        Jedyne na rynku profesjonalne narzędzie do mieszania wszelkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych i klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę</span> również doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
+                        Jedyne na rynku profesjonalne narzędzie do mieszania wszystkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych, klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę.</span>  Doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
                                 Parametry:<br/>
                                 -  Średnica mieszadła:120 mm<br/>
                                 -  Długość całkowita  mieszadła:   500 mm<br/>
@@ -135,15 +135,15 @@ export const Products:FC<WidthInterface> = ({data}) => {
                         transition={{duration: 2}}
                     >
                     <TextHeader>
-                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO AM</TitleSpan> DO ZAPRAW <br/>
+                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO AM</TitleSpan><br/>
                         <RefNum>Nr ref. 8002</RefNum>
                     </TextHeader>
                     <ImageContainer>
-                        <img src={m2} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW" />
+                        <img src={m2} alt="NIE PRYSKAJĄCE MIESZADŁO" />
                     </ImageContainer>
                     <TextContainer>
                         <Text>
-                            Narzędzie do mieszania wszelkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych i klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę</span> również doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
+                        Narzędzie do mieszania wszystkich zapraw, betonu, mas, gipsu , farb, mas izolacyjnych, struktur elewacyjnych, klejów itp., <span>które miesza bez pryskania szybko i dokładnie na jednolitą gładką masę.</span> Doskonale się sprawdza przy produktach o dużym stopniu rozwarstwienia, co może się zdarzyć, jeżeli produkt jest długo magazynowany.<br/><br/>
                             Parametry:<br/>
                             -  Średnica mieszadła: 120 mm<br/>
                             -  Długość mieszadła:   500 mm<br/>
@@ -162,11 +162,11 @@ export const Products:FC<WidthInterface> = ({data}) => {
                     >
 
                     <TextHeader>
-                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO MINI</TitleSpan> DO ZAPRAW <br/>
+                        NIE PRYSKAJĄCE <TitleSpan>MIESZADŁO MINI</TitleSpan><br/>
                         <RefNum>Nr ref. 8003</RefNum>
                     </TextHeader>
                     <ImageContainer>
-                        <img src={m3} alt="NIE PRYSKAJĄCE MIESZADŁO DO ZAPRAW - MINI " />
+                        <img src={m3} alt="NIE PRYSKAJĄCE MIESZADŁO - MINI" />
                     </ImageContainer>
                     <TextContainer>
                         <Text>

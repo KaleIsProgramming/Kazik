@@ -23,19 +23,25 @@ export const Contact:FC<WidthInterface> = ({data}) => {
                 {data >= 1390 ?
                  <>
                     <div>
-                        <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/maksa_mieszadlo/"><i className="fa-brands fa-instagram"></i></a>
                     </div>
                     <div>
-                        <a href="#"><i className="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61559818240480"><i className="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCexnP8v378J3vDkOShEpAXQ"><i className="fa-brands fa-youtube"></i></a>
                     </div>
                  </> 
                  :
                   <div>
                     <div>
-                        <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/maksa_mieszadlo/"><i className="fa-brands fa-instagram"></i></a>
                     </div>
                     <div>
-                        <a href="#"><i className="fa-brands fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61559818240480"><i className="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCexnP8v378J3vDkOShEpAXQ"><i className="fa-brands fa-youtube"></i></a>
                     </div>
                   </div> 
                   }
